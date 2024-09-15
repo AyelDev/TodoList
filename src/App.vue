@@ -1,9 +1,9 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
+  <nav class="sidenav">
+    <router-link to="/">Home</router-link><br>
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
@@ -11,12 +11,12 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+  position: relative;
 }
 
 nav {
-  padding: 30px;
+  padding: 20px;
 }
 
 nav a {
@@ -27,4 +27,12 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+
+.sidenav{
+  background-color: lightblue;
+  height: 80vh;
+  width: 15rem;
+  border-radius: 2rem;
+}
+
 </style>
